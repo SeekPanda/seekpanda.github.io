@@ -31,9 +31,54 @@
 <h2>
 <a id="brought-to-you-by-chinachannel-powered-by-seekpanda" class="anchor" href="#brought-to-you-by-chinachannel-powered-by-seekpanda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Brought to you by ChinaChannel, powered by SeekPanda</h2>
 
-<p>Wondering how to use <code>SendMessage</code>?</p>
+<p>Installation Guide</p>
 
-<p>Made with &lt;3 by <a href="https://github.com/seekpanda" class="user-mention">@seekpanda</a></p>
+<p>Build your First Application with WeChat SDK!
+Note: This document describes how to develop an app using WeChat SDK. You should already be familiar with the XCode environment.</p>
+
+<ol>
+<li><p>Register App ID
+Fill in the required details on the App Registration page to obtain an AppID. Submit the registered app for approval. Approved apps will be released.</p></li>
+<li><p>Download the SDK package
+The package comprises three files: libWeChatSDK.a, WXApi.h, WXApiObject.h</p></li>
+</ol>
+
+<p>Download: iOS SDK package</p>
+
+<ol>
+<li>Build your development environment
+[1] Create your project in XCode.</li>
+</ol>
+
+<p>[2] Add the following three files to your project: libWeChatSDK.a, WXApi.h, WXApiObject.h; for example, you can create a project called Test, and add these files to the project's directory.</p>
+
+<p>Note: For XCode 4.3 and earlier versions, please use libWeChatSDK.a. For XCode 4.5 and later versions, use libWeChatSDK_armv7_v7s.a</p>
+
+<p>iOS Guide : Build your development environment
+[3] Choose the "Build Setting". Then add the paths of the following files to "Search Paths", as shown below: libWeChatSDK.a, WXApi.h, WXApiObject.h.</p>
+
+<p>Note: For XCode 4.3 and earlier versions, use libWeChatSDK.a. for XCode 4.5 and later versions, please use libWeChatSDK_armv7_v7s.a</p>
+
+<p>iOS Guide : Build your development environment
+[4] In Xcode4, select "TARGETS"&gt;"Info"&gt;"URL type"&gt;"URL scheme". Add the ID for your registered app. For Xcode3 and earlier versions, please add the ID to your plist file, as shown below.</p>
+
+<p>iOS Guide : Build your development environment iOS Guide : Build your development environment
+URL scheme settings in Xcode4</p>
+
+<p>[5] For files on which you want to use the WeChat API, import WXApi.h and add the WXApiDelegate protocol.</p>
+
+<h1>
+<a id="import-" class="anchor" href="#import-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>import </h1>
+
+<h1>
+<a id="import-wxapih" class="anchor" href="#import-wxapih" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>import "WXApi.h"</h1>
+
+<p><a href="https://github.com/interface" class="user-mention">@interface</a> AppDelegate : UIResponder 
+<a href="https://github.com/property" class="user-mention">@property</a> (strong, nonatomic) UIWindow *window;
+<a href="https://github.com/end" class="user-mention">@end</a>
+4. Start Coding
+Now go ahead and start coding!
+Made with &lt;3 by <a href="https://github.com/seekpanda" class="user-mention">@seekpanda</a></p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
